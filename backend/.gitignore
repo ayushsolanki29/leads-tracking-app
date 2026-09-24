@@ -1,0 +1,17 @@
+node_modules
+dist
+uploads/*
+!uploads/.gitkeep
+*.log
+.DS_Store
+
+# SQLite
+*.db
+*.db-journal
+*.db-shm
+*.db-wal
+
+# Environment
+.env
+.env.*
+!.env.example
