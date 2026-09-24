@@ -1,0 +1,15 @@
+{
+  "name": "leads-tracking-app",
+  "private": true,
+  "workspaces": [
+    "frontend",
+    "backend"
+  ],
+  "scripts": {
+    "setup": "npm install && npm run db:generate -w backend && npm run db:push -w backend && npm run db:seed -w backend",
+    "dev": "concurrently \"npm run dev -w backend\" \"npm run dev -w frontend\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
